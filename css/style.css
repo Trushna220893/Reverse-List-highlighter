@@ -1,0 +1,82 @@
+/* #General Styles
+================================================== */
+@font-face { font-family: 'GT Walsheim Pro'; src: url('../fonts/GTWalsheimPro-Regular.eot'); src: url('../fonts/GTWalsheimPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2'), url('../fonts/GTWalsheimPro-Regular.woff') format('woff'), url('../fonts/GTWalsheimPro-Regular.ttf') format('truetype'); font-weight: normal; font-style: normal; font-display: swap; }
+@font-face { font-family: 'GT Walsheim Pro'; src: url('../fonts/GTWalsheimPro-Medium.eot'); src: url('../fonts/GTWalsheimPro-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/GTWalsheimPro-Medium.woff2') format('woff2'), url('../fonts/GTWalsheimPro-Medium.woff') format('woff'), url('../fonts/GTWalsheimPro-Medium.ttf') format('truetype'); font-weight: 500; font-style: normal; font-display: swap; }
+
+
+:root {
+    --color1: #ffffff;
+    --color2: #61616C;
+    --color3: #141E70;
+    --color4: #2A37DC;
+    --color5: #040415;
+    --color6: #F5F5F5;
+    --color7: #2D2DE6;
+    --GTWalsheimPro: 'GT Walsheim Pro';
+    --normal: 400;
+    --medium: 500;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;  }
+* {-webkit-tap-highlight-color: rgba(0, 0, 0, 0);font-variant-ligatures: none;}
+.up html, body.up, .up div, .up span, .up applet, .up object, .up iframe, .up a, .up img, .up select, .up input, .up option { margin: 0; padding: 0; border: 0; outline: 0; }
+.up html { -webkit-text-size-adjust: none; }
+.up button, .up input, .up select, .up textarea { font-size: 100%; margin: 0; vertical-align: baseline; box-shadow: none; }
+.up input[type="button"], .up input[type="submit"] {appearance: none; -webkit-appearance: none !important; }
+.up a { text-decoration: none; }
+.up img { border: 0 none; max-width: 100%; vertical-align: top; }
+.up a { outline: none; cursor: pointer; }
+.up a:hover { text-decoration: none; }
+/* :focus { border: 1px solid red !important; } */
+.up sup {font-size: 90%;position: relative;top: 0.3em;line-height: 0.8;}
+.up sup.reg {font-size: 55%;top: 0;}
+.up .clear { clear: both; }
+.up img { max-width: 100%; }
+.up button:focus {outline:0;}
+.up .text-transform { text-transform: uppercase; }
+.up .preloader { display: none; }
+.up img { vertical-align: bottom; }
+
+:is(.up h1,.up h2,.up h3,.up h4,.up h5,.up h6) {font-family: var(--GTWalsheimPro);line-height: 1.2;letter-spacing: 0em;}
+.up h1 {font-size: 65px;color: var(--color3);font-weight: var(--medium);}
+.up h2 {font-size: 44px;color: var(--color3);font-weight: var(--medium);}
+.up h3 {font-size: 30px;color: var(--color3);font-weight: var(--medium);}
+.up h4 {font-size: 24px;color: var(--color2);font-weight: var(--normal);line-height: 1.4;}
+.up h5 {font-size: 22px;color: var(--color3);font-weight: var(--medium);}
+.up h6 {font-size: 20px;color: var(--color3);font-weight: var(--medium);}
+.up p  {font-size: 16px;color: var(--color2);font-weight: var(--normal);letter-spacing: 0em;line-height: 1.4;font-family: var(--GTWalsheimPro);}
+
+/* ~~~~~ Flex Container ~~~~~ */
+.up .flex-container { width: 100%; margin: 0 auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 1 auto; flex: 0 1 auto; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+.up .flex-end {justify-content: flex-end; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end }
+.up .flex-start {-webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.up .flex-center {-webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.up .flex-item { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; padding-left: 15px; padding-right: 15px; }
+/* ~~~~~ / Flex Container ~~~~~ */
+
+/* #Page Structure
+=============================== */
+body.up { margin: 0; padding: 0; font-size: 16px; color: #060202; background: #fff; font-family: 'Fellix'; font-weight: 400;overflow-x: hidden;}
+.up .wrapper { width: 100%; transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s;overflow-x: hidden;}
+.up .main {max-width: 1440px;padding: 0 60px;margin: 0 auto;}
+.up a, .up button { transition: 0.5s; -webkit-transition: 0.5s; -moz-transition: 0.5s; -o-transition: 0.5s; }
+
+
+.up .mid-container{width:100%;}
+
+/* Header Style
+=============================== */
+.up header{width: 100%;}
+
+/* Footer Style
+=============================== */
+.up footer{width: 100%;}
+
+/* Demo grid for Reverse List Highlighter */
+.up .main {max-width: 900px;padding: 40px 20px;margin: 0 auto;}
+.up .boxes{max-width: 600px;margin: 0 auto;display: flex;flex-direction: column;gap: 40px;}
+.up .boxes .row{width: 100%;display: flex;justify-content: flex-start;align-items: center;gap: 40px;}
+.up .boxes .row .grid{width: calc((100% - 80px) /3 );background-color: gray;height: 140px;cursor: pointer;}
+.up .boxes .row .grid.checked {
+    background: #4caf50; /* checked color */
+  }
